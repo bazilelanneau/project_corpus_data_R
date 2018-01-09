@@ -45,12 +45,13 @@ NN_db_sample: in this data frame each row is a unique instance of a noun-noun le
 The scripts also produce a variety of subsets which are placed in a folder called 'subsets'. Once the scripts have been run and the sample has been created, these subsets are no longer needed for analysis. I have designed the scripts to leave these files in place so that the intermediary steps can be more easily understood.  
 <br/>
 <br/>
-RUNNING THE SCRIPTS
-1. Check requirements: the packages needed to run these scripts are found in requirements.txt. To run the scripts you will also need 250 MB of free space.
+RUNNING THE SCRIPTS  
+<br/>
+Check requirements: the packages needed to run these scripts are found in requirements.txt. To run the scripts you will also need 250 MB of free space.
 
-2. Set working directory: set your current working directory in R to the directory in which this README file is located.
+Set working directory: set your current working directory in R to the directory in which this README file is located.
 
-3. Run scripts: To run the scripts use 'sapply(list.files('scripts'), function(x) {source(paste('scripts/', x, sep = ''))})'  
+Run scripts: To run the scripts use 'sapply(list.files('scripts'), function(x) {source(paste('scripts/', x, sep = ''))})'  
 <br/>
 <br/>
 SKILLS DEMONSTRATED  
