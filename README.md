@@ -5,10 +5,12 @@ Author: Bazile Lanneau
 Date: January 2018
 
 
+
 PURPOSE OF THE PROJECT
 
 This project contains R scripts used to create a frequency balanced sample of noun-noun pairings (instances from a corpus of two nouns occurring sequentially). A similar sample was constructed for the purpose of qualitative semantic analysis as part of my dissertation, "Schema-guided comprehension of noun-noun compounds: An experimental and corpus-based approach" (see Ch. 4 of Lanneau_dissertation_FINAL_20171016.pdf). For the dissertation, a random sample of 1000 noun-noun pairings was constructed.
  Exclusion principles were then followed to ensure that all noun-noun pairings could justifiably be considered compounds (and not just two nouns that incidentally occur sequentially). The scripts in this repository only deal with creating the sample of noun-noun pairings, and does not include steps for narrowing that down to compounds. Doing so requires case by case consideration by a trained linguist. However, the file 'analysis_functions.R' provides code for functions that were useful for interacting with data objects throughout the exclusion processes.
+
 
 
 DIFFERENCES FROM THE DISSERTATION
@@ -17,9 +19,11 @@ Owing to time and storage considerations, the scripts in this version work from 
 
 
 
+
 HOW TO USE THIS REPOSITORY
 
 One can browse the scripts found in the scripts directory and/or run these scripts to see them in action. The first script downloads the necessary corpus data, which totals 251 MB. After the download, running the scripts can take up to a few minutes and produces 73 more MB of data.
+
 
 
 INPUT DATA
@@ -33,6 +37,7 @@ lexicon: this table serves as a key providing information linking wordID values 
 
 
 sources: this table provides information about the sources identified by 'textID'. The first column is 'textID' and the other columns are 'word_count' (total number of words found in the text), 'year' (year the text was published), 'genre' (identifying whether the source was spoken, written, etc.), 'subgenre' (codes providing more specific genre information: is it news, or fiction, etc.), 'source' (who produced or published this text), 'title' (the title of the text), and 'publication_info' (optional information about volumes, chapters, or page numbers that more specifically identify where the text comes from).
+
 
 
 OUTPUT DATA
